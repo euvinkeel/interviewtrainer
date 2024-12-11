@@ -32,6 +32,9 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+    - name: Ping Droplet
+      run: ping 165.227.30.165
+
     - name: Copy dist to server
       run: |
         scp -r ./dist/* root@165.227.30.165:/var/www/html
