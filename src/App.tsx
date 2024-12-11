@@ -8,13 +8,13 @@ function App() {
     <>
       <div>
       </div>
-      <h1>wip</h1>
+      <h1>This was automatically deployed by Github Actions!</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          lol
+          it's been a while
         </p>
       </div>
     </>
