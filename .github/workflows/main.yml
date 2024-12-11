@@ -32,6 +32,11 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+    - name: Add SSH key to known hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan -H 165.227.30.165 >> ~/.ssh/known_hosts
+
     - name: Copy dist to server
       run: |
         scp -r ./dist/* root@165.227.30.165:/var/www/html
