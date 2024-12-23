@@ -37,6 +37,17 @@
   padding: 2em;
 }
 
+.grid {
+  margin: auto;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+.trainer-square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 4px;
 }
